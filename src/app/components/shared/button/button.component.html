@@ -1,0 +1,14 @@
+<div
+  class="h-11 bg-black text-white px-6 items-center font-bold rounded-lg flex flex-row gap-2"
+>
+  <ng-template [ngIf]="!!fnrIconSource">
+    <img
+      class="w-4"
+      [attr.src]="fnrIconSource"
+      alt="{{ fnrText }} Icon"
+    />
+  </ng-template>
+  <span>
+    {{ fnrText }}
+  </span>
+</div>
